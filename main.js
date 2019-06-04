@@ -12,4 +12,8 @@ $(document).ready(function(){
 		ga('send', 'event', 'button', 'click', 'button-level-3');
 		console.log('click 3')
 	});
+	$('#mc-embedded-subscribe').click(function() {
+		ga('send', 'event', 'button', 'click', 'subscribed');
+		console.log('subscribed')
+	});
 });
