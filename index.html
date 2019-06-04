@@ -7,9 +7,14 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-38836821-4');
     </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[6]='MMERGE6';ftypes[6]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,7 +23,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
-    <link href='custom.css' rel='stylesheet'>
+    
+    <link href='style.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 
     <title>Weekly Bread</title>
   </head>
@@ -53,7 +61,7 @@
               <li>(bring your own creamcheese)</li>
               </br>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#mailchimpModal">Try it today</button>
+            <button type="button" id="button-level-1" class="btn btn-lg btn-block btn-outline-primary" data-toggle="modal" data-target="#mailchimpModal">Try it today</button>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -67,7 +75,7 @@
               <li>(one for french toast, we assume)</li>
               </br>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#mailchimpModal">More Challah</button>
+            <button type="button" id="button-level-2" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#mailchimpModal">More Challah</button>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -81,7 +89,7 @@
               <li>Invite the whole family!</li>
               <li>(or eat it yourself, we don't judge)</li>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#mailchimpModal">All the Challah</button>
+            <button type="button" id="button-level-3" class="btn btn-lg btn-block btn-primary" data-toggle="modal" data-target="#mailchimpModal">All the Challah</button>
           </div>
         </div>
       </div>
@@ -164,12 +172,5 @@
         </div>
       </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[6]='MMERGE6';ftypes[6]='zip';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
   </body>
 </html>
