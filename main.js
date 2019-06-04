@@ -27,6 +27,13 @@ $(document).ready(function(){
 		});
 	});
 
+	$('#sign-in-button').click(function() {
+		gtag('event', 'click', {
+		  'event_category': 'button',
+		  'event_label': 'sign-in'
+		});
+	});
+
 	$('#orwashers-link').click(function() {
 		gtag('event', 'click', {
 		  'event_category': 'link',
