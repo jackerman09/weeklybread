@@ -27,4 +27,11 @@ $(document).ready(function(){
 		});
 	});
 
+	$('#orwashers-link').click(function() {
+		gtag('event', 'click', {
+		  'event_category': 'link',
+		  'event_label': 'orwashers'
+		});
+	});
+
 });

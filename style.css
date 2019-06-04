@@ -3,6 +3,8 @@
     margin-top: -20px;
 }
 
+a:link { text-decoration: none; }
+
 form{
   max-width: 500px;
   padding: 10px 20px;
